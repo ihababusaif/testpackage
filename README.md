@@ -4,6 +4,9 @@ status](https://travis-ci.com/ihababusaif/testpackage.svg?branch=master)](https:
 
 [![R-CMD-check](https://github.com/ihababusaif/testpackage/workflows/R-CMD-check/badge.svg)](https://github.com/ihababusaif/testpackage/actions)
 
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/github/ihababusaif/testpackage?branch=master&svg=true)](https://ci.appveyor.com/project/ihababusaif/testpackage)
+
 # testpackage
 
 Test package don’t matter to it, we are test our package don’t matter to
