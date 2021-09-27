@@ -1,23 +1,31 @@
+---
+output: github_document
+---
 
-[![Travis build
-status](https://travis-ci.com/ihababusaif/testpackage.svg?branch=master)](https://travis-ci.com/ihababusaif/testpackage)
+[![Travis build status](https://travis-ci.com/ihababusaif/testpackage.svg?branch=master)](https://travis-ci.com/ihababusaif/testpackage)
 
 [![R-CMD-check](https://github.com/ihababusaif/testpackage/workflows/R-CMD-check/badge.svg)](https://github.com/ihababusaif/testpackage/actions)
 
-[![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/ihababusaif/testpackage?branch=master&svg=true)](https://ci.appveyor.com/project/ihababusaif/testpackage)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/ihababusaif/testpackage?branch=master&svg=true)](https://ci.appveyor.com/project/ihababusaif/testpackage)
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
 
 # testpackage
 
-Test package don’t matter to it, we are test our package don’t matter to
-it.
+Test package don't matter to it, we are test our package don't matter to it. 
 
-The goal of testpackage is to …
+The goal of testpackage is to ...
 
 ## Installation
 
-You can install the released version of testpackage from
-[CRAN](https://CRAN.R-project.org) with:
+You can install the released version of testpackage from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
 install.packages("testpackage")
@@ -27,34 +35,23 @@ install.packages("testpackage")
 
 This is a basic example which shows you how to solve a common problem:
 
-``` r
+```{r example}
 library(testpackage)
 ## basic example code
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
 
-``` r
+```{r cars}
 summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
 ```
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/master/examples>.
+You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/master/examples>.
 
 You can also embed plots, for example:
 
-<img src="man/figures/README-pressure-1.png" width="100%" />
+```{r pressure, echo = FALSE}
+plot(pressure)
+```
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
