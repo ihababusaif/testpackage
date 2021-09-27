@@ -1,5 +1,8 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+[![Travis build
+status](https://travis-ci.com/ihababusaif/testpackage.svg?branch=master)](https://travis-ci.com/ihababusaif/testpackage)
+
+[![R-CMD-check](https://github.com/ihababusaif/testpackage/workflows/R-CMD-check/badge.svg)](https://github.com/ihababusaif/testpackage/actions)
 
 # testpackage
 

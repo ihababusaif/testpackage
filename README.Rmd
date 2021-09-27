@@ -2,7 +2,9 @@
 output: github_document
 ---
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+[![Travis build status](https://travis-ci.com/ihababusaif/testpackage.svg?branch=master)](https://travis-ci.com/ihababusaif/testpackage)
+
+[![R-CMD-check](https://github.com/ihababusaif/testpackage/workflows/R-CMD-check/badge.svg)](https://github.com/ihababusaif/testpackage/actions)
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
