@@ -1,0 +1,13 @@
+Package: testpackage
+Type: Package
+Title: test package
+Version: 0.1.0
+Author: Ihab Abusaif <censtat@gmail.com>
+Maintainer: Ihab Abusaif <censtat@gmail.com>
+Description: Test package don't matter to it, we are test our package don't matter to it. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    partitions
+RoxygenNote: 7.1.2
