@@ -3,11 +3,11 @@ Type: Package
 Title: test package
 Version: 0.1.0
 Authors@R: c(
-    person(given="Ihab",
+     person(given="Ihab",
            family="Abusaif", 
            email = "censtat@gmail.com", 
            role =c( "cre","aut")),
-    person("sumeyra", "sert", email = "winston@rstudio.com", role = "aut"))
+     person("sumeyra", "sert", email = "winston@rstudio.com", role = "aut"))
 Description: Test package don't matter to it, we are test our package don't matter to it. 
 License: GPL-3
 Encoding: UTF-8
