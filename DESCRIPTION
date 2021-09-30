@@ -2,18 +2,29 @@ Package: testpackage
 Type: Package
 Title: test package
 Version: 0.1.0
-Author: Ihab Abusaif <censtat@gmail.com>
-Maintainer: Ihab Abusaif <censtat@gmail.com>
+Authors@R: c(
+    person(given="Ihab",
+           family="Abusaif", 
+           email = "censtat@gmail.com", 
+           role =c( "cre","aut")),
+    person("sumeyra", "sert", email = "winston@rstudio.com", role = "aut"))
 Description: Test package don't matter to it, we are test our package don't matter to it. 
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Imports: 
-    partitions
+    partitions,
+    plyr,
+    Rcpp
 RoxygenNote: 7.1.2
 URL: https://github.com/ihababusaif/testpackage
 BugReports: https://github.com/ihababusaif/testpackage/issues
 Suggests: 
     rmarkdown,
-    knitr
+    knitr,
+    xml2,
+    testthat (>= 3.0.0)
 VignetteBuilder: knitr
+Config/testthat/edition: 3
+LinkingTo: 
+    Rcpp

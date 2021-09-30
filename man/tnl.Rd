@@ -2,9 +2,12 @@
 % Please edit documentation in R/testpackage.R
 \name{tnl}
 \alias{tnl}
+\alias{ptnl}
 \title{The (tnl) function.}
 \usage{
 tnl(k, n, l)
+
+ptnl(k, n, l, trial = 1e+05)
 }
 \arguments{
 \item{k}{Vector of quantiles.}
@@ -12,12 +15,18 @@ tnl(k, n, l)
 \item{n}{Sample size.}
 
 \item{l}{The class parameter of Tnl.}
+
+\item{trial}{The number of trials.}
 }
 \value{
 list of an exact probability and distribution function.
+
+The value of the distribution against the specified \code{k}.
 }
 \description{
 Perform exact tnl.
+
+Gives the distribution function
 }
 \examples{
  ##You need to select all of \code{k}, \code{n} and \code{l}
@@ -30,4 +39,22 @@ $tt
 [1] 0.2307692
 }
 
+\dontrun{You need to select all of \code{k}, \code{n} and \code{l}}
+\dontrun{\code{trial}=100000 by default}
+ptnl(k=2,n=6,l=2,trial = 100000)
+\dontrun{
+$k
+[1] 2
+
+$n
+[1] 6
+
+$l
+[1] 2
+
+$method
+[1] "exact"
+
+$ptnl
+[1] 0.03030303}
 }
